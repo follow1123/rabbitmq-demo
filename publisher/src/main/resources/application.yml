@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /yf
+    username: yf
+    password: 123
+    connection-timeout: 1s # 连接超时时间
+    template:
+      retry:
+        enabled: true # 是否启用默认false
+        initial-interval: 1000ms # 首次重连时间
+        multiplier: 1 # 下次重连时间=(initial-interval * multiplier)
+        max-attempts: 3 # 最大重连次数
+#    publisher-confirm-type: correlated # 异步方式实现消息确
+#    publisher-returns: true # 开启publisher-returns机制
