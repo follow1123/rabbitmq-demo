@@ -1,3 +1,1 @@
-# Rabbit MQ Demo 项目
-
-* [详细文档](https://follow1123.github.io/doc/java/framework/rabbitmq/)
+[文档地址](https://follow1123.github.io/docs/java/middleware/rabbitmq/introduction/)
